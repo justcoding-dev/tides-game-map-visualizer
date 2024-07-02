@@ -5,9 +5,9 @@ by *[Shallot Games](https://shallotgames.com/)*.
 
 ## Usage
 
-Copy _index.html_ and _map-visualizer.js_ into the same directory and open _index.html_ in the browser of your choice.
+Copy _index.html_, _map-visualizer.js_ and _hints.js_ into the same directory and open _index.html_ in the browser of your choice.
 
-Edit the _hints()_ function in the beginning of the JavaScript file and reload the browser window.
+Edit the _hints()_ function in the beginning of the _hints.js_ file and reload the browser window.
 
 ## Notes
 
