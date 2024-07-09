@@ -189,5 +189,32 @@ function draw() {
   // Mark the target area
   rect(fromLongitude(minX), fromLatitude(maxY), (maxX - minX) / 10, (maxY - minY) / 10);
 
+  stroke(96,96,96,64);
+  // drawingContext.setLineDash(5,15);
+
+  for (let i=-4500; i <= 4500; i+= 1000) {
+    xy = fromLatitude(i);
+    line(10, xy, 990, xy);
+    line(xy, 10, xy, 990);
+  }
+
+  textSize(12);
+
+  for (let i=-4000; i <= 4000; i+= 1000) {
+    xy = fromLatitude(i);
+    stroke(96,96,96,128);
+    line(10, xy, 990, xy);
+    line(xy, 10, xy, 990);
+
+    stroke(96,96,96,0);
+    fill(32,32,32,255);
+    text(i, 10, xy - 4);
+    text(i, xy-18, 983);
+  }
+
+  stroke(96,96,96,128);
+  xy = fromLatitude(0);
+  line(10, xy, 990, xy);
+  line(xy, 10, xy, 990);
 
 }
